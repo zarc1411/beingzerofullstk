@@ -6,10 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-
+x:string = "RANDOM DATA";
   constructor() { }
 
   ngOnInit() {
+    this.x = this.x + "  new";
   }
-
+  fnclick(){
+    this.x+=" new";
+  }
 }
